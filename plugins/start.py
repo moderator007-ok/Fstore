@@ -1,6 +1,3 @@
-# Don't Remove Credit @CodeFlix_Bots, @rohit_1888
-# Ask Doubt on telegram @CodeflixSupport
-
 import asyncio
 import os
 import random
@@ -156,7 +153,7 @@ async def start_command(client: Client, message: Message):
                 ) if reload_url else None
 
                 await notification_msg.edit(
-                    "<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",
+                    "<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ꜰɪʟᴇ ᴀɢᴀɪɴ 🔄</b>",
                     reply_markup=keyboard
                 )
             except Exception as e:
@@ -164,12 +161,10 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
-
-    [
+                [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
                     InlineKeyboardButton('🍁 sᴇʀɪᴇsғʟɪx', url='https://t.me/Team_Netflix/40')
-
-    ]
+                ]
             ]
         )
         await message.reply_photo(
@@ -185,8 +180,6 @@ async def start_command(client: Client, message: Message):
             #message_effect_id=5104841245755180586  # 🔥
         )
         return
-
-
 
 #=====================================================================================##
 # Don't Remove Credit @CodeFlix_Bots, @rohit_1888
@@ -254,7 +247,6 @@ async def not_joined(client: Client, message: Message):
     reply_markup=InlineKeyboardMarkup(buttons)#,
     #message_effect_id=5104841245755180586  # Add the effect ID here
 )
-
 
 #=====================================================================================##
 

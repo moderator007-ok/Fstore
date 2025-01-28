@@ -29,7 +29,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://XORG:XnPGfXfvGDa6j4Tm@captionbot.7hia2c3.mongodb.net/?retryWrites=true&w=majority&appName=captionbot")
-DB_NAME = os.environ.get("DATABASE_NAME", "Cluser0")
+DB_NAME = os.environ.get("DATABASE_NAME", "captionbot")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1002370814979"))
@@ -41,7 +41,7 @@ FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<blockquote><b>Hello {mention}, welcome to the File Sharing Bot of Movies! Owner: <a href=\"https://t.me/ORGSupport\">ORGSupport</a></b></blockquote></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>HEY!! {first}\n\n I AM File Providing Bot MADE BY ORGSUPPORT, You can Access file shared by our Admin.</blockquote></b>"")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1415136344").split()):

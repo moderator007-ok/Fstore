@@ -1,10 +1,7 @@
 from bot import Bot
-import asyncio
+import pyrogram.utils
 
-async def main():
-    bot = Bot()
-    await bot.start()
-    await asyncio.Event().wait()  # Keeps the bot running
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    Bot().run()
